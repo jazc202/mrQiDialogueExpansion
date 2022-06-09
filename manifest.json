@@ -1,0 +1,11 @@
+{
+    "Name": "Mr. Qi Dialogue Expansion",
+    "Author": "Jaz",
+    "Version": "1.0.0",
+    "Description": "Blue man needs more things to say.",
+    "UniqueID": "Jaz.Mr.QiDialogueExpansion",
+    "UpdateKeys": ["Nexus:12422"], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
