@@ -1,11 +1,10 @@
 {
-    
     "Format": "1.26.0",
     "Changes": [
         {
             "Action":"EditData",
             "Target":"Characters/Dialogue/Mister Qi",
-            "Entries": {
+            "Entries": { 
                 "spring_Mon": "I like you, kid.  You set your sights on a goal, and you make it happen.#$b#That's what makes you special.",
                 "spring_Tue": "You ask a lot of questions, kid.#$e#You already know everything you need to know about me.",
                 "spring_Wed": "I'm glad you're here, kid. I was starting to get bored.", 
@@ -26,7 +25,7 @@
                 "fall_Tue": "Casinos wouldn't be nearly as lucrative if people understood probability.#$e#You see that man at the slot machine? He's been there for days.#$b#He's convinced the machine will have mercy on him any second now. But of course, it's a machine. Mercy has no meaning to it, only chance.#$b#And mercy won't be enough to save him from the pit he's in.",
                 "fall_Wed": "I thought I might see you today.", 
                 "fall_Thu": "Hey. Don't tell anyone about this place, okay? I want to keep it... exclusive.#$e#You'd keep a secret for your friend Mr. Qi, wouldn't you?", 
-                "fall_Fri": "You can't keep secrets from me, kid. I hear of every cave bug you cut in two, every gift you give, ever crop you grow, every word you speak. $1#$b#You understand, don't you?", 
+                "fall_Fri": "You can't keep secrets from me, kid. I hear of every cave bug you cut in two, every gift you give, every crop you grow, every word you speak. $1#$b#You understand, don't you?", 
                 "fall_Sat": "You're clever, kid, but there's still so much you don't understand.", 
                 "fall_Sun": "Some things never change, kid.",
 
@@ -35,20 +34,68 @@
                 "winter_Wed": "Why a casino? No reason, just filling a niche.", 
                 "winter_Thu": "You're a curious one, aren't you?", 
                 "winter_Fri": "Ah, @, welcome back.", 
-                "winter_Sat": "Your grandfather would be proud of you, kid.#$e#.  How do I know?...*chuckle*#$b# I just do, kid.", 
-                "winter_Sun": "One day, kid, all of this will make sense. Until then, just keep climbing.#$e#Just make sure you don't look down. *chuckle*",
-
+                "winter_Sat": "Gambling's a fascinating thing to watch.#$b#So many envy the one who wins big on their first spin.#$b#They don't see the thousands on thousands of gold spent trying to recreate that beginner's luck.", 
+                "winter_Sun": "One day, kid, all of this will make sense. Until then, just keep climbing.#$e#Just make sure you don't look down. *chuckle*"
+            }
+        }, 
+        
+        { 
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"Season":"Spring"},
+            "Entries": {
                 "QiNutRoom_Mon": "There's more to this world than meets the eye, kid. Some day, you might understand.#$b#For now, just keep striving for excellence in everything you do.",
                 "QiNutRoom_Tue": "The walnut hunt was both a test of your will and a sort of game.#$b#I must admit, watching you scurry around the island has been very entertaining.",
-                "QiNutRoom_Wed": "%Qi is watching the screens, flipping a playing card between his fingers.#$e#*chuckle* %name'll be wanting this back...",
+                "QiNutRoom_Wed": "%Qi is watching the screens, flipping a playing card between his fingers.#$b#*chuckle* {{random:Johnny,Robert,Aiden,Jim}}'ll be wanting this back...",
                 "QiNutRoom_Thu": "Your determination is admirable, kid. You really are special.",
                 "QiNutRoom_Fri": "Set your eyes on the furthest star, and let that be your goal.#$b#It's always within your power to go one step further than you used to believe.",
-                "QiNutRoom_Sat": "Do you like games, kid?#$b#Why not check out some of my challenges? We can make a game of it.",
-                "QiNutRoom_Sun": "Between you and me, kid, the casino's more of a side-gig.  My real work's out here."
-
-            
+                "QiNutRoom_Sat": "You like games, don't you, kid?#$b#Why not check out some of my challenges? We can make a game of it.",
+                "QiNutRoom_Sun": "Between you and me, kid, the casino's more of a side-gig#$b#My real work's out here."
             }
         },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"Season":"Summer"},
+            "Entries": {
+                "QiNutRoom_Mon": "Y'know, kid, you're the only one who's made it in here.",
+                "QiNutRoom_Tue": "I got to where I am through the force of pure willpower, kid.#$b#You see... The mind is a very powerful tool.#$b#In fact, it's the most powerful tool in all of reality... and beyond.",
+                "QiNutRoom_Wed": "The screens?#$b#Ah...I like to keep tabs on my friends, that's all.",
+                "QiNutRoom_Thu": "Nice and cool in here, isn't it?",
+                "QiNutRoom_Fri": "You and I...we're rare, kid.#$b#Most people wouldn't have bothered chasing after ten walnuts, let alone a hundred.#$b#But you? You see a door and want to see what's behind it.#$e#I suppose I shouldn't be surprised, though.#$b#After all, you've never been one to shy away from a challenge.",
+                "QiNutRoom_Sat": "I'd imagine you're quite popular back home, eh?#$b#Of course you are. The humble farmer that saved the town from the clutches of corporate greed...#$b#And who doesn't love a good zero-to-hero story?",
+                "QiNutRoom_Sun": "I see your potential, kid. All I want's for you to keep striving for it.#$b#Sometimes we just need a little nudge. That's where I come in."
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"Season":"Fall"},
+            "Entries": {
+                "QiNutRoom_Mon": "Got some new challenges for you today.#$b#I think you'll like 'em.",
+                "QiNutRoom_Tue": "Ah, @, what a pleasant surprise.#$b#...*chuckle* No, it wasn't much of a surprise at all.",
+                "QiNutRoom_Wed": "Your grandfather would be proud of you, @.#$b#How do I know?...*chuckle*#$b# I just do, kid.",
+                "QiNutRoom_Thu": "You're doing great, kid.#$b#You know where to find me if you ever need help.#$e#Of course, I can't just give you all of the answers. That'd be too easy.",
+                "QiNutRoom_Fri": "No one ever became extraordinary without a few sacrifices, kid.#$b#Question is, what are you willing to sacrifice?",
+                "QiNutRoom_Sat": "Never lose your drive, kid. Nothing else will get you quite as far as it will.",
+                "QiNutRoom_Sun": "You've never been afraid to take risks, kid. Risks no one asked you to take.#$b#That's how I know you're special."
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"Season":"Winter"},
+            "Entries": {
+                "QiNutRoom_Mon": "Everything happens for a reason, kid.#$b#You'll understand in time.",
+                "QiNutRoom_Tue": "Don't lose sight of the person you want to become.#$b#They'll always be there; you just have to reach for them.",
+                "QiNutRoom_Wed": "Power's a simple illusion, kid.#$b#It wouldn't exist if no one believed it did.  Lewis' title would mean nothing if not for the meaning you assign to it.#$b#Once you understand that, you can learn to control the illusion.",
+                "QiNutRoom_Thu": "The world's always changing, kid.#$b#Tides rise and fall, the moon waxes and wanes, millenia will see the valley fill...#$b#But I remain constant.",
+                "QiNutRoom_Fri": "How's the weather back home, kid?#$b#Nice and warm out here.",
+                "QiNutRoom_Sat": "Fear's the enemy of excellence, kid.#$b#So many people are so scared of messing up that they never even try.#$b#They'd rather stay where they are now than risk the discomfort of change.",
+                "QiNutRoom_Sun": "Don't forget to check the board tomorrow.#$b#You never know what you might find."
+            }
+        },
+        
         {
             "Action":"EditData",
             "Target":"Characters/Dialogue/Mister Qi",
@@ -56,9 +103,18 @@
             "Entries":{
                 "fall_Thu": "Hey. Don't tell anyone about this place, okay? I want to keep it... exclusive.#$e#You'd keep a secret for your friend Mx. Qi, wouldn't you?", 
                 "summer_Wed": "I was born an ordinary child, but I made a decision early in life that I would become extraordinary."
-
             }
         },
+
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasMod |contains=Isi.MxQi":true,"Season":"Spring"},
+            "Entries":{
+                "QiNutRoom_Wed": "%Qi is watching the screens, flipping a playing card between their fingers.#$b#*chuckle* {{random:Johnny,Robert,Aiden,Jim}}'ll be wanting this back..."
+            }
+        },
+        
         {
             "Action":"EditData",
             "Target":"Characters/Dialogue/Mister Qi",
@@ -67,7 +123,7 @@
                 "spring_Mon": "It's brave of you to keep coming back here, kid. I like that about you.",
                 "spring_Tue": "$y 'You must have so many questions._What's 'it'?_You'll find out soon enough._Why me?_Haven't I told you, kid? You're special._(Remain silent)_Heh. Scared, @?'",
                 "spring_Wed": "I've had my sights set on you the moment you stepped off that bus.#$b#Now look at you...*chuckle*.", 
-                "spring_Thu": "This was always the plan, kid. You don't know the half of it.", 
+                "spring_Thu": "This was always the plan, kid.#$b#You don't know the half of it.", 
                 "spring_Fri": "By the way, I really am sorry about that whole seal of silence business.#$b#I just couldn't take any chances, and I know how you like to talk.#$b#You understand, right? #$e#*chuckle* Of course you do.", 
                 "spring_Sat": "...*chuckle*#$b#You're really something, kid.", 
                 "spring_Sun": "I know that look in your eyes.#$b#You've got a fire, kid, you always have.",
@@ -81,7 +137,7 @@
 
                 "fall_Mon": "Who am I?#$b#*chuckle* Who I am doesn't matter. What matters is who you'll become.",
                 "fall_Tue": "You've made it this far, kid. How much further can you go?",
-                "fall_Wed": "There comes a point in everyone's life when they find themselves on the precipice of excellence.#$b#Most people never take that jump. They remain in their mediocrity. But not you.#$b#That's what I've been waiting for. Someone like you.", 
+                "fall_Wed": "There comes a point in everyone's life when they find themselves on the precipice of excellence.#$b#Most people never take that jump. They remain in their mediocrity. But not you.#$b#That's what I've been waiting for, kid: someone like you.", 
                 "fall_Thu": "I'm putting a lot of faith in you, kid. Don't disappoint me.", 
                 "fall_Fri": "Remember what I said, eh? Don't go telling people about this place.#$b#I'm still your friend Mr. Qi, aren't I?", 
                 "fall_Sat": "It must be so frustrating, kid...#$b#To have all these questions with no way to ask them.#$b#I can see it in your eyes.",
@@ -93,27 +149,17 @@
                 "winter_Thu": "Nothing escapes me, kid.  Don't forget that.", 
                 "winter_Fri": "*chuckle* Welcome back.", 
                 "winter_Sat": "Watch yourself out there, kid. You never know what's waiting for you.", 
-                "winter_Sun": "You're a fighter, kid. Keep it up.",
-
-                "QiNutRoom_Mon": "There's more to this world than meets the eye, kid. Some day, you might understand.#$b#For now, just keep striving for excellence in everything you do.",
-                "QiNutRoom_Tue": "The walnut hunt was both a test of your will and a sort of game.#$b#I must admit, watching you scurry around the island has been very entertaining.",
-                "QiNutRoom_Wed": "%Qi is watching the screens, flipping a playing card between his fingers.#$e#*chuckle* %name'll be wanting this back...",
-                "QiNutRoom_Thu": "Your determination is admirable, kid. You really are special.",
-                "QiNutRoom_Fri": "Set your eyes on the furthest star, and let that be your goal.#$b#It's always within your power to go one step further than you used to believe.",
-                "QiNutRoom_Sat": "Do you like games, kid?#$b#Why not check out some of my challenges? We can make a game of it.",
-                "QiNutRoom_Sun": "Between you and me, kid, the casino's more of a side-gig.  My real work's out here."
+                "winter_Sun": "You're a fighter, kid. Keep it up."
             }
         },
         {
             "Action":"EditData",
             "Target":"Characters/Dialogue/Mister Qi",
-            "When":{"HasMod |contains=Isi.MxQi": true, "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, "HasSeenEvent":"1925179"},
+            "When":{"HasMod |contains=Isi.MxQi": true,"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, "HasSeenEvent":"1925179"},
             "Entries":{
-                "fall_Fri": "Remember what I said, eh? Don't go telling people about this place.#$b#I'm still your friend Mx. Qi, aren't I?",
-                "fall_sun": "I'm a person of my word, kid. Never forget that."
-
+                "fall_Fri": "Remember what I said, eh? Don't go telling people about this place.#$b#I'm still your friend Mr. Qi, aren't I?", 
+                "fall_Sun": "I always keep my word, kid. Never forget that."
             }
         }
-
     ]
 }
