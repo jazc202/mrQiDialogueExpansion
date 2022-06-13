@@ -206,7 +206,44 @@
             "When":{"HasFlag":"SkullCave","HasMod |contains=Isi.MxQi": true},
             "Entries":{
                 "fall_Tue":"When I was a child, I learned fear would only hold me back.#$b#So I taught myself to push through it until I no longer felt it at all."
-            
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasFlag":"QiChallengeComplete"},
+            "Entries":{
+                "spring_Mon":"You're surprising, kid.#$b#I didn't think you had it in you.",
+                "spring_Tue":"Getting hurt's a part of life, kid. The world will beat you down whether you let it or not.#$b#The aim isn't to never get hurt; it's to rise from it, to grow back stronger.",
+                "spring_Wed":"Risk isn't something you can keep away from forever, kid.#$b#You don't get a say in whether or not you find yourself on the edge of losing everything.#$b#The question is: will that moment mean anything?#$b#Will it have been a choice, or just where the winds took you?",
+                "spring_Thu":"How is the wizard, by the way?#$b#It's been so long since we've spoken to each other.#$e#Yeah, kid, I knew him.#$b#We...had a bit of a falling out, so to speak.$1",
+                "spring_Fri":"Look around you, kid.#$b#Every single person here came in thinking they'd quit while they were ahead.#$b#None of them ever did.#$e#We call it the gambler's fallacy.#$b#It's why so many get trapped in a habit.#$b#It's the net over the hole, the false sense of security, ready to tear under the slightest weight.",
+                "spring_Sat":"It is one thing to be physically weak. If you play your cards right, that'll never stop you from reaching excellence. But mental?#$b#If you lack mental strength, brute force won't mean a damn thing.#$b#It's all about will, kid. Everything else is just collateral.",
+                "spring_Sun":"There's a lot you still don't know, kid, and even more you don't understand.#$b#But you keep marching onward in spite of that. I respect that.",
+        
+                "summer_Mon":"Never underestimate the power of your mind, kid.#$b#It's the strongest weapon you've got.",
+                "summer_Tue":"Bravery ain't the opposite of fear, kid. It's feeling the fear and pushing onwards anyways.",
+                "summer_Wed":"I've got no patience for people who make excuses for themselves.#$b#It all comes down to a lack of willpower; any further explaining and they're just wasting their breath.$1",
+                "summer_Thu":"Safety's easy, kid. It's comfortable, but it's meaningless.#$b#All it says is that you know how to avoid danger, and that's not always a good thing.$1",
+                "summer_Fri":"You're not the first person I've set my sights on, kid.#$b#The others?#$b#They didn't quite pan out the way I'd hoped.$1",
+                "summer_Sat":"You know the difference between cowardice and fear, kid?#$e#Fear is an emotion, a base instinct we evolved to keep us alive back before we had houses to live in and stores to buy our food from.#$b#Cowardice, though, that's a choice.#$b#A decision that you'd rather go the easy route and allow your fear to control you than exert the willpower needed to push past it.",
+                "summer_Sun":"Ambition isn't just having goals, kid. It's also having the drive to pursue them.#$b#That's where so many fall short.#$b#A goal without drive is just a wish, and a wish ain't worth nothing.",
+        
+                "fall_Mon":"Y'know what makes mediocrity so frustrating, kid?#$b#It's what it represents. The wasted potential, a spark never allowed to ignite for fear of setting the world on fire.#$b#But sometimes it needs to burn.",
+                "fall_Tue":"The monsters weren't always confined to the mines, kid. The valley hasn't always been as idyllic as it is now.#$b#Of course, all they accomplish by hiding the monsters is allowing them to be forgotten.#$b#It creates a sense of security, sure, but what happens when that security is breached?",
+                "fall_Wed":"You never cease to impress me, kid.#$b#It's not often that someone exceeds my expectations so consistently.",
+                "fall_Thu":"When you've accomplished the sorts of things I've accomplished, it's easy to feel disappointed when people don't show any interest in reaching their full potential.$1",
+                "fall_Fri":"The sort of ambition that makes you powerful is different from the sort of ambition that makes you great.#$b#One focuses on bettering how you', one focuses on bettering yourself.",
+                "fall_Sat":"Complacency is the enemy of progress, kid.#$b#Too much potential is squandered in someone who is 'perfectly happy' where they are.$1",
+                "fall_Sun":"One of the biggest traps we've invented is getting so caught up feeling ashamed of ourselves for our fear that we never give ourselves a chance to overcome it.",
+        
+                "winter_Mon":"People usually try to find the smallest risk for the highest reward.#$b#What they fail to realize is half of the reward comes from the risk itself. The lessons learned, the experience gained.#$b#People aren't very good at recognizing rewards that aren't tangible.#$b#It's understandable, I suppose.",
+                "winter_Tue":"Your bravery is commendable, kid.#$b#Most people never would've gone into the skull cavern, let alone stayed, let alone gone down.",
+                "winter_Wed":"What you've gotta understand, kid, is that safety's an illusion.#$b#There's no real way to guarantee it.#$b#It's like a hydra. You cut off one sort of danger, two more grow back in its place.",
+                "winter_Thu":"Even the weakest mind holds more power than the strongest muscle.#$b#Your arm can only swing a sword when your mind tells it to.#$b#Your mind is what decides to use the sword, what overcomes your basic fear.#$b#Never underestimate that, kid.",
+                "winter_Fri":"You've done more in {{round: {{query: {{DaysPlayed}}/28}}}} months than most people do their entire lives. That's worth being proud of, kid.#$b#Just don't use that pride as an excuse to not go any further.",
+                "winter_Sat":"I'm sure you're familiar with the Dunning-Kruger effect.#$b#Funny little tendency humans have to believe themselves experts where they're actually incompetent, and to believe themselves incompetent where they're actually experts.#$e#That's just one of many ways cognition fails.#$b#It's quite entertaining when you know how to spot them. I like to make a game of it.",
+                "winter_Sun":"Remember, kid, even if you're only one step above mediocrity, you're still headed in the right direction."
             }
         }
     ]
