@@ -1,0 +1,104 @@
+{
+    "Format": "1.28.0",
+    "Changes": [
+        //The man, the myth, the legend, Mr. Qi
+        {
+            "LogName":"Qi Dialogue Expansion - Default Qi Dialogue",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "Entries": { 
+                "Mon":"{{i18n:Qi_{{season}}_Mon}}",
+                "Tue":"{{i18n:Qi_{{season}}_Tue}}",
+                "Wed":"{{i18n:Qi_{{season}}_Wed}}",
+                "Thu":"{{i18n:Qi_{{season}}_Thu}}",
+                "Fri":"{{i18n:Qi_{{season}}_Fri}}",
+                "Sat":"{{i18n:Qi_{{season}}_Sat}}",
+                "Sun":"{{i18n:Qi_{{season}}_Sun}}",
+
+                "QiNutRoom_Mon": "{{i18n:{{season}}_QiNutRoom_Mon}}",
+                "QiNutRoom_Tue": "{{i18n:{{season}}_QiNutRoom_Tue}}",
+                "QiNutRoom_Wed": "{{i18n:{{season}}_QiNutRoom_Wed |randomName={{random:Johnny,Robert,Aiden,Jim}} }}",
+                "QiNutRoom_Thu": "{{i18n:{{season}}_QiNutRoom_Thu}}",
+                "QiNutRoom_Fri": "{{i18n:{{season}}_QiNutRoom_Fri}}",
+                "QiNutRoom_Sat": "{{i18n:{{season}}_QiNutRoom_Sat}}",
+                "QiNutRoom_Sun": "{{i18n:{{season}}_QiNutRoom_Sun}}"
+            }
+        },
+        {
+            "LogName":"Qi Dialogue Expansion - Default Qi Dialogue, Mx. Qi Patches",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasMod |contains=Isi.MxQi": true},
+            "Entries":{
+                "Thu": "{{i18n:MxQi_{{season}}_Thu |default={{i18n:Qi_{{season}}_Thu}} }}", 
+                "Wed": "{{i18n:MxQi_{{season}}_Wed |default={{i18n:Qi_{{season}}_Wed}} }}",
+                "QiNutRoom_Wed": "{{i18n:{{season}}_MxQi_NutRoom_Wed |randomName={{random:Johnny,Robert,Aiden,Jim}} |default={{i18n:{{season}}_QiNutRoom_Wed}}}}"
+            }
+        },
+        
+        {
+            "LogName":"Qi Dialogue Expansion - After SVE Qi Event",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, "HasSeenEvent":"1925179"},
+            "Entries": {
+                "Mon":"{{i18n:SVE_Qi_{{season}}_Mon}}",
+                "Tue":"{{i18n:SVE_Qi_{{season}}_Tue}}",
+                "Wed":"{{i18n:SVE_Qi_{{season}}_Wed}}",
+                "Thu":"{{i18n:SVE_Qi_{{season}}_Thu}}",
+                "Fri":"{{i18n:SVE_Qi_{{season}}_Fri}}",
+                "Sat":"{{i18n:SVE_Qi_{{season}}_Sat}}",
+                "Sun":"{{i18n:SVE_Qi_{{season}}_Sun}}"
+            }
+        },
+        {
+            "LogName":"Qi Dialogue Expansion - After SVE Qi Event, Mx. Qi Patch",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasMod |contains=Isi.MxQi": true,"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, "HasSeenEvent":"1925179"},
+            "Entries":{
+                "Fri": "{{i18n:SVE_MxQi_{{season}}_Fri |default={{i18n:SVE_Qi_{{season}}_Fri}} }}", 
+                "Sun": "{{i18n:SVE_MxQi_{{season}}_Sun |default={{i18n:SVE_Qi_{{season}}_Sun}} }}"
+            }
+        },
+
+        {
+            "LogName":"Qi Dialogue Expansion - After Completed Skull Cave 100 quest",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasFlag":"SkullCave"},
+            "Entries":{
+                "Mon":"{{i18n:SkullCave_Qi_{{season}}_Mon}}",
+                "Tue":"{{i18n:SkullCave_Qi_{{season}}_Tue}}",
+                "Wed":"{{i18n:SkullCave_Qi_{{season}}_Wed}}",
+                "Thu":"{{i18n:SkullCave_Qi_{{season}}_Thu}}",
+                "Fri":"{{i18n:SkullCave_Qi_{{season}}_Fri}}",
+                "Sat":"{{i18n:SkullCave_Qi_{{season}}_Sat |randomAttribute={{random:bravery,ambition,curiosity,persistence}}}}",
+                "Sun":"{{i18n:SkullCave_Qi_{{season}}_Sun}}"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasFlag":"SkullCave","HasMod |contains=Isi.MxQi": true},
+            "Entries":{
+                "Tue":"{{i18n:SkullCave_MxQi_{{season}}_Tue |default={{i18n:SkullCave_Qi_{{season}}_Tue}} }}"
+            }
+        },
+        {
+            "LogName":"Qi Dialogue Expansion - After completed Qi Challenge",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasFlag":"QiChallengeComplete"},
+            "Entries":{
+                "Mon":"{{i18n:Qi_ChallengeComplete_{{season}}_Mon}}",
+                "Tue":"{{i18n:Qi_ChallengeComplete_{{season}}_Tue}}",
+                "Wed":"{{i18n:Qi_ChallengeComplete_{{season}}_Wed}}",
+                "Thu":"{{i18n:Qi_ChallengeComplete_{{season}}_Thu}}",
+                "Fri":"{{i18n:Qi_ChallengeComplete_{{season}}_Fri |months={{round: {{query: {{DaysPlayed}}/28}}}} }}",
+                "Sat":"{{i18n:Qi_ChallengeComplete_{{season}}_Sat}}",
+                "Sun":"{{i18n:Qi_ChallengeComplete_{{season}}_Sun}}"
+            }
+        }
+    ]
+}

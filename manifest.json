@@ -1,0 +1,21 @@
+{
+    "Name": "Mr. Qi Dialogue Expansion",
+    "Author": "Jaz",
+    "Version": "1.4.0",
+    "Description": "Blue man needs more things to say.",
+    "UniqueID": "Jaz.Mr.QiDialogueExpansion",
+    "UpdateKeys": ["Nexus:12422"], 
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies":[
+        {
+            "UniqueID":"SuperAardvark.AntiSocial",
+            "IsRequired":true
+        },
+        {
+            "UniqueID": "Esca.CustomNPCExclusions",
+            "IsRequired": true
+        }
+    ]
+}
