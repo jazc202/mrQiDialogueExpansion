@@ -1,27 +1,26 @@
 {
     "Format": "1.28.0",
     "Changes": [
-        //The man, the myth, the legend, Mr. Qi
         {
             "LogName":"Qi Dialogue Expansion - Default Qi Dialogue",
             "Action":"EditData",
             "Target":"Characters/Dialogue/Mister Qi",
             "Entries": { 
-                "Mon":"{{i18n:Qi_{{season}}_Mon}}",
-                "Tue":"{{i18n:Qi_{{season}}_Tue}}",
-                "Wed":"{{i18n:Qi_{{season}}_Wed}}",
-                "Thu":"{{i18n:Qi_{{season}}_Thu}}",
-                "Fri":"{{i18n:Qi_{{season}}_Fri}}",
-                "Sat":"{{i18n:Qi_{{season}}_Sat}}",
-                "Sun":"{{i18n:Qi_{{season}}_Sun}}",
+                "Mon":"{{i18n:Default_Qi_{{season}}_Mon}}",
+                "Tue":"{{i18n:Default_Qi_{{season}}_Tue}}",
+                "Wed":"{{i18n:Default_Qi_{{season}}_Wed}}",
+                "Thu":"{{i18n:Default_Qi_{{season}}_Thu}}",
+                "Fri":"{{i18n:Default_Qi_{{season}}_Fri}}",
+                "Sat":"{{i18n:Default_Qi_{{season}}_Sat}}",
+                "Sun":"{{i18n:Default_Qi_{{season}}_Sun}}",
 
-                "QiNutRoom_Mon": "{{i18n:{{season}}_QiNutRoom_Mon}}",
-                "QiNutRoom_Tue": "{{i18n:{{season}}_QiNutRoom_Tue}}",
-                "QiNutRoom_Wed": "{{i18n:{{season}}_QiNutRoom_Wed |randomName={{random:Johnny,Robert,Aiden,Jim}} }}",
-                "QiNutRoom_Thu": "{{i18n:{{season}}_QiNutRoom_Thu}}",
-                "QiNutRoom_Fri": "{{i18n:{{season}}_QiNutRoom_Fri}}",
-                "QiNutRoom_Sat": "{{i18n:{{season}}_QiNutRoom_Sat}}",
-                "QiNutRoom_Sun": "{{i18n:{{season}}_QiNutRoom_Sun}}"
+                "QiNutRoom_Mon": "{{i18n:Default_QiNutRoom_{{season}}_Mon}}",
+                "QiNutRoom_Tue": "{{i18n:Default_QiNutRoom_{{season}}_Tue}}",
+                "QiNutRoom_Wed": "{{i18n:Default_QiNutRoom_{{season}}_Wed |randomName={{random:Johnny,Robert,Aiden,Jim}} }}",
+                "QiNutRoom_Thu": "{{i18n:Default_QiNutRoom_{{season}}_Thu}}",
+                "QiNutRoom_Fri": "{{i18n:Default_QiNutRoom_{{season}}_Fri}}",
+                "QiNutRoom_Sat": "{{i18n:Default_QiNutRoom_{{season}}_Sat_{{isCommunityCenterComplete}}}}",
+                "QiNutRoom_Sun": "{{i18n:Default_QiNutRoom_{{season}}_Sun}}"
             }
         },
         {
@@ -30,12 +29,149 @@
             "Target":"Characters/Dialogue/Mister Qi",
             "When":{"HasMod |contains=Isi.MxQi": true},
             "Entries":{
-                "Thu": "{{i18n:MxQi_{{season}}_Thu |default={{i18n:Qi_{{season}}_Thu}} }}", 
-                "Wed": "{{i18n:MxQi_{{season}}_Wed |default={{i18n:Qi_{{season}}_Wed}} }}",
+                "Thu": "{{i18n:MxQi_{{season}}_Thu |default={{i18n:Default_Qi_{{season}}_Thu}} }}", 
+                "Wed": "{{i18n:MxQi_{{season}}_Wed |default={{i18n:Default_Qi_{{season}}_Wed}} }}",
                 "QiNutRoom_Wed": "{{i18n:{{season}}_MxQi_NutRoom_Wed |randomName={{random:Johnny,Robert,Aiden,Jim}} |default={{i18n:{{season}}_QiNutRoom_Wed}}}}"
             }
         },
-        
+        {
+            "LogName":"Qi Dialogue Expansion - After SC25",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasFlag":"QiChallengeComplete"},
+            "Entries":{
+                "Mon":"{{i18n:ChallengeComplete_Qi_{{season}}_Mon}}",
+                "Tue":"{{i18n:ChallengeComplete_Qi_{{season}}_Tue}}",
+                "Wed":"{{i18n:ChallengeComplete_Qi_{{season}}_Wed}}",
+                "Thu":"{{i18n:ChallengeComplete_Qi_{{season}}_Thu}}",
+                "Fri":"{{i18n:ChallengeComplete_Qi_{{season}}_Fri |months={{round: {{query: {{DaysPlayed}}/28}}}} }}",
+                "Sat":"{{i18n:ChallengeComplete_Qi_{{season}}_Sat}}",
+                "Sun":"{{i18n:ChallengeComplete_Qi_{{season}}_Sun}}",
+
+                "QiNutRoom_Mon": "{{i18n:ChallengeComplete_QiNutRoom_{{season}}_Mon |default={{i18n:ChallengeComplete_Qi_{{season}}_Mon}}}}",
+                "QiNutRoom_Tue": "{{i18n:ChallengeComplete_QiNutRoom_{{season}}_Tue |default={{i18n:ChallengeComplete_Qi_{{season}}_Tue}}}}",
+                "QiNutRoom_Wed": "{{i18n:ChallengeComplete_QiNutRoom_{{season}}_Wed |default={{i18n:ChallengeComplete_Qi_{{season}}_Wed}}}}",
+                "QiNutRoom_Thu": "{{i18n:ChallengeComplete_QiNutRoom_{{season}}_Thu |default={{i18n:ChallengeComplete_Qi_{{season}}_Thu}}}}",
+                "QiNutRoom_Fri": "{{i18n:ChallengeComplete_QiNutRoom_{{season}}_Fri |default={{i18n:ChallengeComplete_Qi_{{season}}_Fri |months={{round: {{query: {{DaysPlayed}}/28}}}} }}}}",
+                "QiNutRoom_Sat": "{{i18n:ChallengeComplete_QiNutRoom_{{season}}_Sat |default={{i18n:ChallengeComplete_Qi_{{season}}_Sat}}}}",
+                "QiNutRoom_Sun": "{{i18n:ChallengeComplete_QiNutRoom_{{season}}_Sun |default={{i18n:ChallengeComplete_Qi_{{season}}_Sun}}}}"
+            }
+        },
+        {
+            "LogName":"Qi Dialogue Expansion - SC100 quest",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasFlag":"QiCave"},
+            "Entries":{
+                "Mon":"{{i18n:SkullCave_Qi_{{season}}_Mon}}",
+                "Tue":"{{i18n:SkullCave_Qi_{{season}}_Tue}}",
+                "Wed":"{{i18n:SkullCave_Qi_{{season}}_Wed}}",
+                "Thu":"{{i18n:SkullCave_Qi_{{season}}_Thu}}",
+                "Fri":"{{i18n:SkullCave_Qi_{{season}}_Fri}}",
+                "Sat":"{{i18n:SkullCave_Qi_{{season}}_Sat |randomAttribute={{random:bravery,ambition,curiosity,persistence}} }}",
+                "Sun":"{{i18n:SkullCave_Qi_{{season}}_Sun}}",
+
+                "QiNutRoom_Mon": "{{i18n:SkullCave_QiNutRoom_{{season}}_Mon |default={{i18n:SkullCave_Qi_{{season}}_Mon}}}}",
+                "QiNutRoom_Tue": "{{i18n:SkullCave_QiNutRoom_{{season}}_Tue |default={{i18n:SkullCave_Qi_{{season}}_Tue}}}}",
+                "QiNutRoom_Wed": "{{i18n:SkullCave_QiNutRoom_{{season}}_Wed |default={{i18n:SkullCave_Qi_{{season}}_Wed}}}}",
+                "QiNutRoom_Thu": "{{i18n:SkullCave_QiNutRoom_{{season}}_Thu |default={{i18n:SkullCave_Qi_{{season}}_Thu}}}}",
+                "QiNutRoom_Fri": "{{i18n:SkullCave_QiNutRoom_{{season}}_Fri |default={{i18n:SkullCave_Qi_{{season}}_Fri}}}}",
+                "QiNutRoom_Sat": "{{i18n:SkullCave_QiNutRoom_{{season}}_Sat |default={{i18n:SkullCave_Qi_{{season}}_Sat |randomAttribute={{random:bravery,ambition,curiosity,persistence}} }} }}",
+                "QiNutRoom_Sun": "{{i18n:SkullCave_QiNutRoom_{{season}}_Sun |default={{i18n:SkullCave_Qi_{{season}}_Sun}}}}"
+            }
+        },
+        {
+            "LogName":"Qi Dialogue Expansion - SC100 - Mx. Qi patch",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasFlag":"QiCave","HasMod |contains=Isi.MxQi": true},
+            "Entries":{
+                "Tue":"{{i18n:SkullCave_MxQi_{{season}}_Tue |default={{i18n:SkullCave_Qi_{{season}}_Tue}} }}"
+            }
+        },
+
+        {
+            "LogName":"Qi Dialogue Expansion - Enchanted Grove quest",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,"HasSeenEvent":"908072"},
+            "Entries":{
+                "Mon":"{{i18n:EG_Qi_{{season}}_Mon}}",
+                "Tue":"{{i18n:EG_Qi_{{season}}_Tue}}",
+                "Wed":"{{i18n:EG_Qi_{{season}}_Wed}}",
+                "Thu":"{{i18n:EG_Qi_{{season}}_Thu}}",
+                "Fri":"{{i18n:EG_Qi_{{season}}_Fri}}",
+                "Sat":"{{i18n:EG_Qi_{{season}}_Sat}}",
+                "Sun":"{{i18n:EG_Qi_{{season}}_Sun}}",
+
+                "QiNutRoom_Mon": "{{i18n:EG_QiNutRoom_{{season}}_Mon |default={{i18n:EG_Qi_{{season}}_Mon}}}}",
+                "QiNutRoom_Tue": "{{i18n:EG_QiNutRoom_{{season}}_Tue |default={{i18n:EG_Qi_{{season}}_Tue}}}}",
+                "QiNutRoom_Wed": "{{i18n:EG_QiNutRoom_{{season}}_Wed |default={{i18n:EG_Qi_{{season}}_Wed}}}}",
+                "QiNutRoom_Thu": "{{i18n:EG_QiNutRoom_{{season}}_Thu |default={{i18n:EG_Qi_{{season}}_Thu}}}}",
+                "QiNutRoom_Fri": "{{i18n:EG_QiNutRoom_{{season}}_Fri |default={{i18n:EG_Qi_{{season}}_Fri}}}}",
+                "QiNutRoom_Sat": "{{i18n:EG_QiNutRoom_{{season}}_Sat |default={{i18n:EG_Qi_{{season}}_Sat}} }}",
+                "QiNutRoom_Sun": "{{i18n:EG_QiNutRoom_{{season}}_Sun |default={{i18n:EG_Qi_{{season}}_Sun}}}}"
+            }
+        },
+
+        {
+            "LogName":"Qi Dialogue Expansion - Enchanted Grove Quest - Mx. Qi patch",
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Mister Qi",
+            "When":{"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,"HasSeenEvent":"908072","HasMod |contains=Isi.MxQi": true},
+            "Entries":{
+                "Tue":"{{i18n:EG_MxQi_{{season}}_Tue |default={{i18n:SkullCave_Qi_{{season}}_Tue}} }}"
+            }
+        },
+
+        // {
+        //     "LogName":"Qi Dialogue Expansion - Crimson Badlands",
+        //     "Action":"EditData",
+        //     "Target":"Characters/Dialogue/Mister Qi",
+        //     "When":{"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,"HasSeenEvent":"908078"},
+        //     "Entries":{
+        //         "Mon":"{{i18n:Badlands_Qi_{{season}}_Mon}}",
+        //         "Tue":"{{i18n:Badlands_Qi_{{season}}_Tue}}",
+        //         "Wed":"{{i18n:Badlands_Qi_{{season}}_Wed}}",
+        //         "Thu":"{{i18n:Badlands_Qi_{{season}}_Thu}}",
+        //         "Fri":"{{i18n:Badlands_Qi_{{season}}_Fri}}",
+        //         "Sat":"{{i18n:Badlands_Qi_{{season}}_Sat}}",
+        //         "Sun":"{{i18n:Badlands_Qi_{{season}}_Sun}}",
+
+        //         "QiNutRoom_Mon": "{{i18n:Badlands_QiNutRoom_{{season}}_Mon |default={{i18n:Badlands_Qi_{{season}}_Mon}}}}",
+        //         "QiNutRoom_Tue": "{{i18n:Badlands_QiNutRoom_{{season}}_Tue |default={{i18n:Badlands_Qi_{{season}}_Tue}}}}",
+        //         "QiNutRoom_Wed": "{{i18n:Badlands_QiNutRoom_{{season}}_Wed |default={{i18n:Badlands_Qi_{{season}}_Wed}}}}",
+        //         "QiNutRoom_Thu": "{{i18n:Badlands_QiNutRoom_{{season}}_Thu |default={{i18n:Badlands_Qi_{{season}}_Thu}}}}",
+        //         "QiNutRoom_Fri": "{{i18n:Badlands_QiNutRoom_{{season}}_Fri |default={{i18n:Badlands_Qi_{{season}}_Fri}}}}",
+        //         "QiNutRoom_Sat": "{{i18n:Badlands_QiNutRoom_{{season}}_Sat |default={{i18n:Badlands_Qi_{{season}}_Sat}} }}",
+        //         "QiNutRoom_Sun": "{{i18n:Badlands_QiNutRoom_{{season}}_Sun |default={{i18n:Badlands_Qi_{{season}}_Sun}}}}"
+        //     }
+        // },
+
+        // {
+        //     "LogName":"Qi Dialogue Expansion - Void Shard",
+        //     "Action":"EditData",
+        //     "Target":"Characters/Dialogue/Mister Qi",
+        //     "When":{"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,"HasSeenEvent":"1579123"},
+        //     "Entries":{
+        //         "Mon":"{{i18n:VoidShard_Qi_{{season}}_Mon}}",
+        //         "Tue":"{{i18n:VoidShard_Qi_{{season}}_Tue}}",
+        //         "Wed":"{{i18n:VoidShard_Qi_{{season}}_Wed}}",
+        //         "Thu":"{{i18n:VoidShard_Qi_{{season}}_Thu}}",
+        //         "Fri":"{{i18n:VoidShard_Qi_{{season}}_Fri}}",
+        //         "Sat":"{{i18n:VoidShard_Qi_{{season}}_Sat}}",
+        //         "Sun":"{{i18n:VoidShard_Qi_{{season}}_Sun}}",
+
+        //         "QiNutRoom_Mon": "{{i18n:VoidShard_QiNutRoom_{{season}}_Mon |default={{i18n:VoidShard_Qi_{{season}}_Mon}}}}",
+        //         "QiNutRoom_Tue": "{{i18n:VoidShard_QiNutRoom_{{season}}_Tue |default={{i18n:VoidShard_Qi_{{season}}_Tue}}}}",
+        //         "QiNutRoom_Wed": "{{i18n:VoidShard_QiNutRoom_{{season}}_Wed |default={{i18n:VoidShard_Qi_{{season}}_Wed}}}}",
+        //         "QiNutRoom_Thu": "{{i18n:VoidShard_QiNutRoom_{{season}}_Thu |default={{i18n:VoidShard_Qi_{{season}}_Thu}}}}",
+        //         "QiNutRoom_Fri": "{{i18n:VoidShard_QiNutRoom_{{season}}_Fri |default={{i18n:VoidShard_Qi_{{season}}_Fri}}}}",
+        //         "QiNutRoom_Sat": "{{i18n:VoidShard_QiNutRoom_{{season}}_Sat |default={{i18n:VoidShard_Qi_{{season}}_Sat}} }}",
+        //         "QiNutRoom_Sun": "{{i18n:VoidShard_QiNutRoom_{{season}}_Sun |default={{i18n:VoidShard_Qi_{{season}}_Sun}}}}"
+        //     }
+        // },
+
         {
             "LogName":"Qi Dialogue Expansion - After SVE Qi Event",
             "Action":"EditData",
@@ -48,7 +184,15 @@
                 "Thu":"{{i18n:SVE_Qi_{{season}}_Thu}}",
                 "Fri":"{{i18n:SVE_Qi_{{season}}_Fri}}",
                 "Sat":"{{i18n:SVE_Qi_{{season}}_Sat}}",
-                "Sun":"{{i18n:SVE_Qi_{{season}}_Sun}}"
+                "Sun":"{{i18n:SVE_Qi_{{season}}_Sun}}",
+
+                "QiNutRoom_Mon":"{{i18n:SVE_QiNutRoom_{{season}}_Mon |default={{i18n:SVE_Qi_{{season}}_Mon}}}}",
+                "QiNutRoom_Tue":"{{i18n:SVE_QiNutRoom_{{season}}_Tue |default={{i18n:SVE_Qi_{{season}}_Tue}}}}",
+                "QiNutRoom_Wed":"{{i18n:SVE_QiNutRoom_{{season}}_Wed |default={{i18n:SVE_Qi_{{season}}_Wed}}}}",
+                "QiNutRoom_Thu":"{{i18n:SVE_QiNutRoom_{{season}}_Thu |default={{i18n:SVE_Qi_{{season}}_Thu}}}}",
+                "QiNutRoom_Fri":"{{i18n:SVE_QiNutRoom_{{season}}_Fri |default={{i18n:SVE_Qi_{{season}}_Fri}}}}",
+                "QiNutRoom_Sat":"{{i18n:SVE_QiNutRoom_{{season}}_Sat |default={{i18n:SVE_Qi_{{season}}_Sat}}}}",
+                "QiNutRoom_Sun":"{{i18n:SVE_QiNutRoom_{{season}}_Sun |default={{i18n:SVE_Qi_{{season}}_Sun}}}}",
             }
         },
         {
@@ -59,45 +203,6 @@
             "Entries":{
                 "Fri": "{{i18n:SVE_MxQi_{{season}}_Fri |default={{i18n:SVE_Qi_{{season}}_Fri}} }}", 
                 "Sun": "{{i18n:SVE_MxQi_{{season}}_Sun |default={{i18n:SVE_Qi_{{season}}_Sun}} }}"
-            }
-        },
-
-        {
-            "LogName":"Qi Dialogue Expansion - After Completed Skull Cave 100 quest",
-            "Action":"EditData",
-            "Target":"Characters/Dialogue/Mister Qi",
-            "When":{"HasFlag":"SkullCave"},
-            "Entries":{
-                "Mon":"{{i18n:SkullCave_Qi_{{season}}_Mon}}",
-                "Tue":"{{i18n:SkullCave_Qi_{{season}}_Tue}}",
-                "Wed":"{{i18n:SkullCave_Qi_{{season}}_Wed}}",
-                "Thu":"{{i18n:SkullCave_Qi_{{season}}_Thu}}",
-                "Fri":"{{i18n:SkullCave_Qi_{{season}}_Fri}}",
-                "Sat":"{{i18n:SkullCave_Qi_{{season}}_Sat |randomAttribute={{random:bravery,ambition,curiosity,persistence}}}}",
-                "Sun":"{{i18n:SkullCave_Qi_{{season}}_Sun}}"
-            }
-        },
-        {
-            "Action":"EditData",
-            "Target":"Characters/Dialogue/Mister Qi",
-            "When":{"HasFlag":"SkullCave","HasMod |contains=Isi.MxQi": true},
-            "Entries":{
-                "Tue":"{{i18n:SkullCave_MxQi_{{season}}_Tue |default={{i18n:SkullCave_Qi_{{season}}_Tue}} }}"
-            }
-        },
-        {
-            "LogName":"Qi Dialogue Expansion - After completed Qi Challenge",
-            "Action":"EditData",
-            "Target":"Characters/Dialogue/Mister Qi",
-            "When":{"HasFlag":"QiChallengeComplete"},
-            "Entries":{
-                "Mon":"{{i18n:Qi_ChallengeComplete_{{season}}_Mon}}",
-                "Tue":"{{i18n:Qi_ChallengeComplete_{{season}}_Tue}}",
-                "Wed":"{{i18n:Qi_ChallengeComplete_{{season}}_Wed}}",
-                "Thu":"{{i18n:Qi_ChallengeComplete_{{season}}_Thu}}",
-                "Fri":"{{i18n:Qi_ChallengeComplete_{{season}}_Fri |months={{round: {{query: {{DaysPlayed}}/28}}}} }}",
-                "Sat":"{{i18n:Qi_ChallengeComplete_{{season}}_Sat}}",
-                "Sun":"{{i18n:Qi_ChallengeComplete_{{season}}_Sun}}"
             }
         }
     ]
